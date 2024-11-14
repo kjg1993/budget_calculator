@@ -1,0 +1,45 @@
+/* Aplica estilos personalizados al contenedor del input */
+.custom-datepicker .react-datepicker-wrapper,
+.custom-datepicker .react-datepicker__input-container input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f1f5f9;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estilo para el calendario en sí */
+.custom-datepicker .react-datepicker {
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #2563eb;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Días seleccionados y con foco */
+.custom-datepicker .react-datepicker__day--selected,
+.custom-datepicker .react-datepicker__day--keyboard-selected {
+    background-color: #2563eb; /* Color azul */
+    color: white;
+    border-radius: 50%;
+}
+
+/* Días al pasar el ratón */
+.custom-datepicker .react-datepicker__day:hover {
+    background-color: #93c5fd;
+    border-radius: 50%;
+}
+
+/* Flechas de navegación */
+.custom-datepicker .react-datepicker__navigation-icon::before {
+    border-color: #2563eb;
+}
+
+/* Encabezado del calendario */
+.custom-datepicker .react-datepicker__current-month,
+.custom-datepicker .react-datepicker__day-name {
+    color: #2563eb;
+    font-weight: bold;
+}
